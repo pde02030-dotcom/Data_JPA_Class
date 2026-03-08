@@ -24,7 +24,7 @@ public class Student {
 | 정의 위치 | 클래스 레벨                                       |
 | 기능    | 클래스가 엔티티임을 JPA에 알림                           |
 | 필수 조건 | 디폴트 생성자 존재, 식별자 필드(`@Id`) 존재                  |
-| 선택 속성 | `name` – JPQL에서 사용할 엔티티 이름 지정 (디폴트트값: 클래스명)    |
+| 선택 속성 | `name` – JPQL에서 사용할 엔티티 이름 지정 (디폴트값: 클래스명)    |
 | 필드 조건 | 엔티티 클래스는 final 클래스가 아니어야 하며, 필드도 final이면 안 됨 |
 
 ---
@@ -37,7 +37,7 @@ public class Student {
 
 ### 🔹 디폴트 생성자 필수
 
-JPA는 리플렉션(Reflection)을 통해 객체를 생성하므로 **public 또는 protected 디폴트트 생성자**가 반드시 있어야 합니다.
+JPA는 리플렉션(Reflection)을 통해 객체를 생성하므로 **public 또는 protected 디폴트 생성자**가 반드시 있어야 합니다.
 
 ```java
 public Student() {} // 기본 생성자
@@ -69,7 +69,7 @@ public class Student {
     @Column(name = "marks")
     private int marks;
 
-    // 디폴트트 생성자
+    // 디폴트 생성자
     public Student() {}
 
     // 파라미터 생성자
@@ -88,7 +88,7 @@ public class Student {
 
 ## 🔤 `@Entity(name = "별칭")` 속성 활용
 
-디폴트트로 엔티티 이름은 클래스 이름(`Student`)이지만, `name` 속성을 지정하면 JPQL에서 이 이름으로 참조합니다.
+디폴트로 엔티티 이름은 클래스 이름(`Student`)이지만, `name` 속성을 지정하면 JPQL에서 이 이름으로 참조합니다.
 
 ```java
 @Entity(name = "Learner")
