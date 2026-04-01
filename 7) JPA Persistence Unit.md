@@ -40,7 +40,7 @@ Persistence Unit은 `persistence.xml` 파일 내에서 정의되며, **`META-INF
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="https://java.sun.com/xml/ns/persistence"
              xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-    리
+```
 
 | 항목                 | 요약 설명                                |
 | ------------------ | ------------------------------------ |
